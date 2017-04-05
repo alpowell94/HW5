@@ -9,7 +9,7 @@ package model;
 public class Basketball {
     
     private int ballerID;
-    private String name;
+    private String playerName;
     private int age;
     private String college;
     private int ppg;
@@ -18,23 +18,26 @@ public class Basketball {
 
     public Basketball() {
         this.ballerID = 0;
-        this.name = "";
+        this.playerName = "";
         this.age = 0;
         this.college = "";
         this.ppg = 0;
         this.rpg = 0;
         this.apg = 0;
-        
-        
-        
-    public Basketball(int ballerID, String name, int age, String college, int ppg, int rpg, int apg) {
+    }
+    
+
+    
+    public Basketball(int ballerID, String playerName, int age, String college, int ppg, int rpg, int apg) {
         this.ballerID = ballerID;
-        this.name = name;
+        this.playerName = playerName;
         this.age = age;
         this.college = college;
         this.ppg = ppg;
         this.rpg = rpg;
         this.apg = apg;
+        
+    }
 
  
     public int getBallerID() {
@@ -45,12 +48,13 @@ public class Basketball {
         this.ballerID = ballerID;
     }
 
-    public String getName() {
-        return name;
+    public String getPlayerName() {
+        return playerName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    
+    public void setPlayerName(String playerName) {
+        this.playerName = playerName;
     }
 
     public int getAge() {
@@ -96,12 +100,12 @@ public class Basketball {
     
        @Override
     public String toString() {
-        return "Basketball{" + "ballerID=" + ballerID + ", name=" + name + ", age=" + age + ", college=" + college + ", ppg=" + ppg + ", rpg=" + rpg + ", apg=" + apg + '}';
+        return "Basketball{" + "ballerID=" + ballerID + ", name=" + playerName + ", age=" + age + ", college=" + college + ", ppg=" + ppg + ", rpg=" + rpg + ", apg=" + apg + '}';
     }
+    
+}
 
-    
-    
-    }
+   
     
     
     
